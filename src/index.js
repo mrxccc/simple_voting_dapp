@@ -38,6 +38,7 @@ web3.eth.getAccounts().then(result => accounts = result);
      }
 } 
 
+// 需转成16进制的才能给合约中byte32的数据传参，且前缀要加上0x
 var stringtoHex = function (str) {
     var val = "";
     for (var i = 0; i < str.length; i++) {

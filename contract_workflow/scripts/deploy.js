@@ -1,6 +1,5 @@
 const path = require('path');
 const Web3 = require('web3');
-const fs = require('fs-extra'); 
 const web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
 // 1. 拿到 abi 和 bytecode 
 const contractPath = path.resolve(__dirname, '../compiled/Voting.json');
