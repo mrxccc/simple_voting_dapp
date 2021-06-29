@@ -3,7 +3,6 @@ pragma solidity ^0.4.22;
 contract Voting {
     bytes32[] public canditateList;
     mapping (bytes32 => uint8) public votesReceived;
-    bool isValid;
     constructor() public {
         canditateList = getBytes32ArrayForInput();
     }
